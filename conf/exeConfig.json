@@ -1,0 +1,9 @@
+{
+	"config": "exeConfig",
+	"data": {
+		"nMaxVoltesExe": 0,
+		"nExeSleep": 1,
+		"nFilsExecutats": 0,
+		"nFilsActius": 0
+	}
+}

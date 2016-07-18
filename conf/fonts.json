@@ -1,0 +1,19 @@
+{ 
+	"config": "fonts",
+	"data": {
+		"twitter": { "tId": "twitter", "tCod": "twi", "tDesc": "Twitter, xarxa social de microblogging" },
+		"facebook": { "tId": "facebook", "tCod": "fbk", "tDesc": "Facebook, xarxa social de murs" },
+		"instagram": { "tId": "instagram", "tCod": "ing", "tDesc": "Instagram, xarxa social de microblogging fotografic" },
+		"viquipedia": { "tId": "viquipedia", "tCod": "viq", "tDesc": "Viquipedia, enciclopedia virtual collaborativa" },
+		"youtube": { "tId": "youtube", "tCod": "you", "tDesc": "Youtube, xarxa social de videos" },
+		"linkedin": { "tId": "linkedin", "tCod": "lin", "tDesc": "LinkedIn, xarxa social de mur professional" },
+		"gmail": { "tId": "gmail", "tCod": "gma", "tDesc": "Gmail, servei de correu electronic" },
+		"idescat": { "tId": "idescat", "tCod": "ide", "tDesc": "Idescat, institut de estadistica de Catalunya" },
+		"icc": { "tId": "icc", "tCod": "icc", "tDesc": "ICC, institut cartografic de Catalunya" },
+		"gmaps": { "tId": "gmaps", "tCod": "map", "tDesc": "GoogleMaps, servei cartografic de google" },
+		"gcalendar": { "tId": "gcalendar", "tCod": "cal", "tDesc": "GoogleCalendar, servei de calendari de google" },
+		"github": { "tId": "github", "tCod": "git", "tDesc": "Github, xarxa social de desenvolupadors" },
+		"spotify": { "tId": "spotify", "tCod": "spo", "tDesc": "Spotify, servei de reproduccio de musica streaming" },
+		"wordpress": { "tId": "wordpress", "tCod": "wpr", "tDesc": "Wordpress, xarxa de blogs" }
+	}
+}

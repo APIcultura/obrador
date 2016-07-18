@@ -1,0 +1,11 @@
+{
+	"config": "petConfig",
+	"data": {
+		"nMaxVoltesPet": 1000,
+		"nMaxVoltesBuidesPet": 1000,
+		"nPetAgafar": 1,
+		"nPetSleep": 3,
+		"bApagar": false,
+		"dApagar": "2016-01-01T00:00:00.000Z"
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"config": "projectes",
+	"data": {
+		"SobTech": { "tId": "SobTech", "lUsuaris": [ "catbru", "etorius", "orpuig" ], "tDesc": "Ajuntant anarcos exiliats a Cat" },
+		"PornNet": { "tId": "PornNet", "lUsuaris": [ "catbru" ], "tDesc": "Enllasant les ganes de que arribi la VR al porno" },
+		"PezWanda": { "tId": "PezWanda", "lUsuaris": [ "etorius" ], "tDesc": "Mortalitat de peixos al principat creuat per la prob de tenir la seu de un cartel a 2km" }
+	}
+}

@@ -1,0 +1,8 @@
+{ 
+	"config": "usuaris",
+	"data": {
+		"orpuig": { "tId": "orpuig", "tDesc": "El que no es droga" },
+		"catbru": { "tId": "catbru", "tDesc": "Porno multipestanya. EstropeaoRotoPerfecto" },
+		"etorius": { "tId": "etorius", "tDesc": "Cartel animalista de pastis granes" }
+	}
+}

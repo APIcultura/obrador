@@ -1,0 +1,13 @@
+{
+	"config": "estats",
+	"data": {
+		"PetPendent": { "tId": "PetPendent", "nEstat": 10, "tDesc": "Les peticions que poden ser gestioandes" },
+		"PetAgafada": { "tId": "PetAgafada", "nEstat": 20, "tDesc": "Les peticions que les ha agafat el gestor de peticions" },
+		"PetProcess": { "tId": "PetProcess", "nEstat": 30, "tDesc": "Les peticions que ja s\"estan processant al seu metode" },
+		"PetFinExit": { "tId": "PetFinExit", "nEstat": 40, "tDesc": "Les peticions que han finalitzat amb exit" },
+		"PetErrDesc": { "tId": "PetErrDesc", "nEstat": 50, "tDesc": "Les peticions que poden ser gestioandes" },
+		"ExeIniciat": { "tId": "ExeIniciat", "nEstat": 1000, "tDesc": "La execucio s\"ha iniciat" },
+		"ExeFinalit": { "tId": "ExeFinalit", "nEstat": 1010, "tDesc": "La execucio ha finalitzat" },
+		"ExeErrDesc": { "tId": "ExeErrDesc", "nEstat": 1500, "tDesc": "La execucio ha finalitzat" }
+	}
+}

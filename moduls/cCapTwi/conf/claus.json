@@ -1,0 +1,33 @@
+{
+	"config": "claus",
+	"data": {
+		"orpuig_exem": {
+			"tId": "orpuig_exem",
+			"ConsumerKey": "WMZ9RuEWM2uEwmyxgWviTilaH",
+			"ConsumerSecret": "wtJFbOtuigkDjxzsmyVAWUZ2EWv69TrIQoBQw48HNRzJm9m7uy",
+			"AccessToken": "301370226-0nCXgmm3RFo4nWHyIN3bGqq2vUmi5CgnlpTwqniG",
+			"AccessTokenSecret": "ukpvSFLzjutM2l1o2dfnAqtaTm25oXgBBjScsbIrBC64H"
+		},
+		"rogersanjaume": {
+			"tId": "catbru",
+			"ConsumerKey": "dGktEHYCUomIIjfNacH6MTKlq",
+			"ConsumerSecret": "auArYymCerH4e54MZytbrSKq4erHwRyKFNs1tz7b8QhEI5Ua1G",
+			"AccessToken": "202370583-SREY1WMP9sZdFNhqZVQDtRZVZ1h8Ht8YBwLorS9V",
+			"AccessTokenSecret": "so2s4plJkBsafCf2o0uwZDFcB8PQrmhdbzHAnaooIHteH"
+		},
+		"rogersanjaume2": {
+			"tId": "catbru_2",
+			"ConsumerKey": "dZYTJGiEPhDKiRKMFHTRGEjiV",
+			"ConsumerSecret": "drRNq0IcieG42ms518yJzzDXVkl4cw9v7wWiQIqj4Ct9HLVPJ3",
+			"AccessToken": "202370583-UetRis8lNynqqiQpF8QV3vGkqUwIJ2CEpgyR36bS",
+			"AccessTokenSecret": "zfnbMZdZLdJeaq3uf6uANqXTlksfj4ixJEZPsSfEjYO1o"
+		},
+		"rogersanjaume3": {
+			"tId": "catbru_3",
+			"ConsumerKey": "tj3BpNquOW6t9umqFYYdwvxWt",
+			"ConsumerSecret": "Z7BnYBjNAWUoQDrXq0IhBkqpDNopt4AtS5Hn8KxMpNXNfORYSc",
+			"AccessToken": "202370583-0AbuqrG6yotv7fftT8A6aJYPH9zk4gaiUTZo7lkT",
+			"AccessTokenSecret": "mnqjY9rgP4OFkWnwqeq1DeSNUSDYOuUNqbN946wBMKV1A"
+		}
+	}
+}

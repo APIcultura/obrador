@@ -1,0 +1,8 @@
+{
+	"config": "errors",
+	"data": {
+		"ErrExeNoCont": { "tId": "ErrExeNoCont", "nCodErr": 10 },
+		"ErrPetNoCont": { "tId": "ErrPetNoCont", "nCodErr": 100 },
+		"Err1": { "tId": "", "nCodErr": 1 }
+	}
+}

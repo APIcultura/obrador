@@ -1,0 +1,74 @@
+{
+	"config": "getRests",
+	"data": {
+		"search/tweets": {
+			"tId": "search/tweets", "tCod": "SeaTw",
+			"nLimUsr": 100, "nLimApp": 200,
+			"tUrl": "api.Twitter...",
+			"jParams": {
+				"q": {},
+				"geocode": {},
+				"lang": {},
+				"locale": {},
+				"result_type": {},
+				"count": {},
+				"until": {},
+				"since_id": {},
+				"max_id": {},
+				"include_entities": {},
+				"callback": {}
+			},
+			"jData": { "tTipus": "dic", "data": { "metadata": "dic", "statuses": "list" } },
+			"jExemple": {},
+			"tDesc": "Twitter, xarxa social de microblogging"
+		},
+		"statuses/user_timeline": {
+			"tId": "statuses/user_timeline", "tCod": "UsrTl",
+			"nLimUsr": 100, "nLimApp": 200,
+			"tUrl": "api.Twitter.com...",
+			"jParams": {},
+			"jExemple": {},
+			"tDesc": "Twitter, xarxa social de microblogging"
+		},
+		"statuses/home_timeline": {
+			"tId": "statuses/home_timeline", "tCod": "HmeTl",
+			"nLimUsr": 100, "nLimApp": 200,
+			"tUrl": "api.Twitter.com...",
+			"jParams": {},
+			"jExemple": {},
+			"tDesc": "Twitter, xarxa social de microblogging"
+		},
+		"friends/ids": {
+			"tId": "friends/ids", "tCod": "FrIds",
+			"nLimUsr": 15, "nLimApp": 15,
+			"tUrl": "api.Twitter.com...",
+			"jParams": {},
+			"jExemple": {},
+			"tDesc": "Twitter, xarxa social de microblogging"
+		},
+		"friends/list": {
+			"tId": "friends/list", "tCod": "FrLst",
+			"nLimUsr": 15, "nLimApp": 30,
+			"tUrl": "api.Twitter.com...",
+			"jParams": {},
+			"jExemple": {},
+			"tDesc": "Twitter, xarxa social de microblogging"
+		},
+		"followers/ids": {
+			"tId": "followers/ids", "tCod": "FoIds",
+			"nLimUsr": 15, "nLimApp": 15,
+			"tUrl": "api.Twitter.com...",
+			"jParams": {},
+			"jExemple": {},
+			"tDesc": "Twitter, xarxa social de microblogging"
+		},
+		"followers/list": {
+			"tId": "followers/list", "tCod": "FoLst",
+			"nLimUsr": 15, "nLimApp": 30,
+			"tUrl": "api.Twitter.com...",
+			"jParams": {},
+			"jExemple": {},
+			"tDesc": "Twitter, xarxa social de microblogging"
+		 }
+	}
+}
