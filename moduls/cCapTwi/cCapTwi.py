@@ -11,6 +11,7 @@ try:
 
 except Exception as e:
 	print(e)
+	#TODO: posar al log del sistema...
 
 class cCapTwi(cPet):
 
@@ -37,6 +38,7 @@ class cCapTwi(cPet):
 		else:
 			self.pActPetEstat(self.jPet,'PetFinFrac')
 
+		#TODO: traslladar aixo a cPeticio, self.pInsPetSeguent()
 		if 'jPetSeg' in self.jParams:
 			jPetSeg = self.jParams['jPetSeg']
 			self.fInsJPet(self.fJPet( self.tProjecte,jPetSeg['tLib'],jPetSeg['tMet'],dt.now(),jPetSeg['jParams'],10))
@@ -44,17 +46,8 @@ class cCapTwi(cPet):
 
 	def pCapSimple(self):
 
-		# var per imprimir xivatus per debuggar (posar a True per veure-ho tot)
-		bImpTot = False
-
 		tRest = self.jParams['tRest']
 		jClaus = self.pCrearClient(tRest,'app')
-
-		if bImpTot:
-			print('--------------------')
-			print(tRest)
-			print(self.jParams)
-			print('--------------------')
 
 		oPreg = self.cClient.api
 		for r in self.fSeparaPunt(tRest):
@@ -64,39 +57,13 @@ class cCapTwi(cPet):
 
 		if oResposta.headers['status'] != '200 OK':
 			print('Aha! Algun error!')
+			#TODO: insertar el error a db
 
 		self.fActClaus(tRest,jClaus['tId'],oResposta.headers['x-rate-limit-remaining'])
 
 		# guardem a Db
 		jGuardar = { 'nExeId': self.nExeId, 'jPet': self.jPet, 'jHeaders': oResposta.headers, 'jData': oResposta.data }
 		self.pGuardarData(jGuardar,self.jParams['tDesti'])
-
-
-		if bImpTot:
-			print('-----------------------------')
-			print(type(oResposta))
-			print(oResposta)
-			print('-----------------------------')
-			print('-- request_method -----------')
-			print(oResposta.request_method)
-			print('-----------------------------')
-			print('-- resource_url -------------')
-			print(oResposta.resource_url)
-			print('-----------------------------')
-			print('-- headers ------------------')
-			print(oResposta.headers)
-			print('-----------------------------')
-			print('-- data ---------------------')
-			print(oResposta.data)
-			print('-----------------------------')
-			print('-----------------------------')
-			print(type(oResposta.headers))
-			print(oResposta.headers.keys())
-			print('-----------------------------')
-			print('-----------------------------')
-			print(type(oResposta.data))
-			print('-----------------------------')
-			print('-----------------------------')
 
 		oResposta.jResposta = {}
 		oResposta.jResposta['tEstat'] = 'ok'
@@ -164,26 +131,6 @@ class cCapTwi(cPet):
 		# b.Actualitzar situacio claus
 		# nQuedenUsr/App posar el min( oResposta.headers['remainingwhatever'] , 'el que hi ha a DB' )
 
-		if bImpTot:
-			print('----------------------------')
-			print('----------------------------')
-
-			for h in oResposta.headers:
-				print(h)
-
-				print('----------------------------')
-				print('----------------------------')
-				print('----------------------------')
-
-			print(oResposta.headers['status'])
-			print(oResposta.headers['content-length'])
-			print(oResposta.headers['x-rate-limit-limit'])
-			print(oResposta.headers['x-response-time'])
-			print(oResposta.headers['x-rate-limit-reset'])
-			print(oResposta.headers['x-rate-limit-remaining'])
-			print(oResposta.headers['expires'])
-			print(oResposta.headers['content-type'])
-
 		return oResposta.jResposta
 
 
@@ -191,14 +138,12 @@ class cCapTwi(cPet):
 
 		dAra = dt.now()
 
-		print('dins recursiva')
 		bSeguir = True
 		tRecur = self.jParams['tRecur']
 		jResultat = {}
 
 		while bSeguir:
 
-			print('dins seguir')
 			jResposta = self.pCapSimple()
 
 			if tRecur in self.jParams['jArgs']:
@@ -221,10 +166,8 @@ class cCapTwi(cPet):
 				bSeguir = True
 
 
-		print('-------------------------')
-		print('...i hem tardat...')
-		print(dt.now()-dAra)
-		print('-------------------------')
+		nTempsTardat = dt.now()-dAra
+		#TODO: instertar-ho a algun lloc bonic
 
 		return jResultat
 
@@ -274,7 +217,6 @@ class cCapTwi(cPet):
 		return jResultat2[0]['data'][jResultat['tClau']]
 
 	def fActClaus(self,tRest,tClau,nLimitRemaining):
-		print('Ara actualitzem els nQueden de les claus')
 		jCond = { 'tRest': tRest, 'tClau': tClau}
 		jCanvi = { '$min': { 'nQuedenApp': nLimitRemaining }, '$set': {'dUltima': dt.now()} }
 		self.conDb.fActualitzar('CapTwiSit',jCond,jCanvi)
