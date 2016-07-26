@@ -167,7 +167,7 @@ class cCapTwi(cPet):
 
 
 		nTempsTardat = dt.now()-dAra
-		#TODO: instertar-ho a algun lloc
+		#TODO: instertar-ho a algun lloc bonic
 
 		return jResultat
 
