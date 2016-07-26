@@ -124,9 +124,3 @@ class cPeticio(object):
             return jResultat
         except Exception as e:
             raise e
-
-    def pInsPetSeguent(self):
-        if 'jPetSeg' in self.jParams:
-            jPetSeg = self.jParams['jPetSeg']
-            self.fInsJPet(self.fJPet( self.tProjecte,jPetSeg['tLib'],jPetSeg['tMet'],dt.now(),jPetSeg['jParams'],10))
-            
